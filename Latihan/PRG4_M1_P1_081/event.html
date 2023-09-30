@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulthan Media TV</title>
+    <link rel="icon" type="image/png" href="images/Logo_sulthan.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <style>
+        /* untuk mengubah semua font menjadi Poppins */
+        body, p, a, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="vh-100 overflow-hidden">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fs-4" href="index.html" style="font-family: 'Poppins', sans-serif;">Sulthan Media TV</a>
+            <!-- Toogle Button -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Sidebar -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+                style="background-color: rgba(255, 255, 255, 0.15); backdrop-filter: blur(6px)">
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sulthan Media TV</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Sidebar Body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">Tentang</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="event.html">Pengumuman</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white">
+            <div class="container"
+                style="text-align: center; background-color: rgba(67, 50, 50, 0.15); backdrop-filter: blur(10px); border-radius: 15px;">
+                <h1 style="font-size: 2.3rem;">Pengumuman</h1> <br>
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Posisi / Jabatan</th>
+                            <th scope="col">Gaji</th>
+                            <th scope="col">Lulusan</th>
+                            <th scope="col">Lainnya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Art Director</td>
+                            <td>Rp 4.0000.0000 - Rp 9.0000.0000</td>
+                            <td>S1 Jurusan Tata Artistik</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#detail1">
+                                    Detail
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Stunt Coordinator</td>
+                            <td>Rp 6.0000.0000 - Rp 8.0000.0000</td>
+                            <td>D3 Jurusan Koreografi</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#detail1">
+                                    Detail
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Script Supervisor</td>
+                            <td>Rp 8.0000.0000 - Rp 12.0000.0000</td>
+                            <td>S1 Jurusan Televisi dan Film</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#detail1">
+                                    Detail
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="detail1" tabindex="-1" data-bs-keyboard="false" aria-labelledby="detail1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="detail1Label">Details</h1>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Kami sedang mencari individu berbakat yang ingin bergabung dengan tim kami di Sulthan Media TV.
+                    Jika Anda adalah seseorang yang penuh semangat, kreatif, dan berorientasi pada prestasi, maka Anda mungkin adalah orang yang kami cari.
+                    Kami menawarkan lingkungan kerja yang dinamis, peluang pengembangan karier yang luas, dan kesempatan untuk berkontribusi dalam industri hiburan yang berkembang pesat.
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Form
+                        Pendaftaran
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="form1" tabindex="-1" data-bs-keyboard="false" aria-labelledby="form1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="form1Label">Form Persetujuan</h1>
+                    <button type="button" class="btn-close shadow-none" data-bs-toggle="modal" data-bs-target="#detail1"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="col-form-label">Nama:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ttl" class="col-form-label">Tempat Lahir:</label>
+                            <input type="text" class="form-control" id="ttl">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ttl" class="col-form-label">Tempat Lahir:</label>
+                            <input type="date" class="form-control" id="tgllahir">
+                        </div>
+                        <div class="mb-3">
+                            <label for="alamat" class="col-form-label">Alamat:</label>
+                            <textarea class="form-control" id="alamat"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gender" class="col-form-label">Jenis Kelamin:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadio1"
+                                    value="RT1">
+                                <label class="form-check-label" for="exampleRadio1">
+                                    Laki - laki
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadio2"
+                                    value="RT2">
+                                <label class="form-check-label" for="exampleRadio2">
+                                    Perempuan
+                                </label>
+                            </div><br>
+                            <div class="mb-3">
+                                <label for="riwayatpenyakit" class="col-form-label">Riwayat Penyakit:</label><br>
+                                <input class="form-check-input" type="checkbox" id="asma">
+                                <label>Asma</label>
+                                <input class="form-check-input" type="checkbox" id="maag">
+                                <label>Maag</label>
+                                <input class="form-control" id="riwayatpenyakit" placeholder="Lainnya">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Pengalaman Kerja" class="col-form-label">Pengalaman Kerja:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" id="selectedpengalaman" class="form-control" placeholder="Pengalaman Kerja"
+                                        readonly>
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pengalaman Kerja
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#" data-value="Fresh Graduate">Fresh Graduate</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="1 - 3 Tahun">1 - 3 Tahun</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value=">5 Tahun">> 5 Tahun</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="mb-3">
+                                <label for="buktiijazah" class="col-form-label">Bukti Ijazah / Sertifikat :</label>
+                                <input type="file" class="form-control" id="buktiijazah">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="detail2" tabindex="-1" data-bs-keyboard="false" aria-labelledby="detail2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="detail2Label">Details</h1>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Kami sedang mencari individu berbakat yang ingin bergabung dengan tim kami di Sulthan Media TV. 
+                    Jika Anda adalah seseorang yang penuh semangat, kreatif, dan berorientasi pada prestasi, maka Anda mungkin adalah orang yang kami cari. 
+                    Kami menawarkan lingkungan kerja yang dinamis, peluang pengembangan karier yang luas, dan kesempatan untuk berkontribusi dalam industri hiburan yang berkembang pesat.
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Form Pendaftaran
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to update the input field when an Pengalaman is selected
+        document.querySelectorAll('.dropdown-item').forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                var selectedpengalaman = e.target.getAttribute('data-value');
+                document.getElementById('selectedpengalaman').value = selectedpengalaman;
+            });
+        });
+    </script>
+</body>
+
+</html>
